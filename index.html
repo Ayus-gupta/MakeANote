@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bgContainer">
+    <!-- Background Image -->
+    <img id="bgImage" src="img/page3.jpg" alt="Background image">
+
+    <!-- Menu Button -->
+    <button id="menuBtn">☰ Menu</button>
+
+    <!-- Toolbar -->
+    <div class="toolbar" id="toolbar" style="display:none;">
+      <!-- Text Tools -->
+      <div class="tool-group">
+        <label>Color:
+          <input type="color" id="textColor" value="#ffffff">
+        </label>
+        <label>Size:
+          <input type="number" id="textSize" value="30" min="8" max="180">
+        </label>
+        <label>Font:
+          <select id="fontSelect">
+            <option value="'Dancing Script', cursive">Dancing Script</option>
+            <option value="'Lucida Handwriting', cursive">Lucida Handwriting</option>
+            <option value="'Bradley Hand', cursive">Bradley Hand</option>
+            <option value="'Segoe Script', cursive">Segoe Script</option>
+            <option value="'Comic Sans MS', cursive">Comic Sans</option>
+          </select>
+        </label>
+        <label>
+          <input type="checkbox" id="underlineToggle"> Underline
+        </label>
+        <button onclick="toggleEraseMode()">🧽 Erase Mode</button>
+      </div>
+
+      <!-- File Uploads -->
+      <div class="tool-group">
+        <label>Background:
+          <input type="file" id="bgFile" accept="image/*">
+        </label>
+        <label>Overlay Image:
+          <input type="file" id="overlayFile" accept="image/*">
+        </label>
+      </div>
+
+      <!-- Save/Load -->
+      <div class="tool-group">
+        <button onclick="deleteSelected()">🗑 Delete</button>
+        <button onclick="saveWork()">💾 Save</button>
+        <button onclick="loadWork()">🔄 Load</button>
+        <button onclick="eraseSelected()">✏️ Erase</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="notes.js"></script>
+</body>
+</html>
