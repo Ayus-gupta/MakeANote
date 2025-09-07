@@ -1,4 +1,4 @@
-# MakeANote
+# MyCopy
 
 ## 🌟 Overview
 The **Handwritten Notes App** is a web-based digital note-taking tool that allows users to **write, edit, and organize notes** on a classic notebook-style interface. It delivers a natural **handwriting experience** with custom fonts, paper styles, and background uploads. The app is responsive and works on **desktop and mobile devices**. 📱💻
