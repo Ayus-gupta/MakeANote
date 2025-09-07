@@ -1,0 +1,48 @@
+/* Lined Paper */
+.lined-paper {
+  background-color: #fff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #000 0px,
+    #000 1px,
+    transparent 1px,
+    transparent 24px
+  );
+}
+
+/* Grid Paper */
+.grid-paper {
+  background-color: #fff;
+  background-image: 
+    repeating-linear-gradient(
+      to bottom,
+      #000 0px,
+      #000 1px,
+      transparent 1px,
+      transparent 24px
+    ),
+    repeating-linear-gradient(
+      to right,
+      #000 0px,
+      #000 1px,
+      transparent 1px,
+      transparent 24px
+    );
+}
+
+/* Plain Paper */
+.plain-paper {
+  background-color: #fff;
+}
+
+/* Yellow Paper */
+.yellow-paper {
+  background-color: #fff8dc;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #000 0px,
+    #000 1px,
+    transparent 1px,
+    transparent 24px
+  );
+}

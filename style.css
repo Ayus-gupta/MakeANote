@@ -1,0 +1,51 @@
+/* Toolbar Theme: Teal + Blue */
+.custom-toolbar {
+  background: linear-gradient(90deg, teal, steelblue);
+  color: white;
+}
+.custom-toolbar .form-control,
+.custom-toolbar .form-select {
+  border-radius: 8px;
+}
+
+/* Writing Area */
+#bgContainer {
+  height: 100vh;
+  position: relative;
+  cursor: text;
+  overflow: hidden;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+/* Text + Overlay */
+.text {
+  position: absolute;
+  cursor: move;
+  outline: none;
+}
+.overlayImg {
+  position: absolute;
+  cursor: move;
+  max-width: 300px;
+  border: 1px dashed #555;
+}
+.selected {
+  outline: 2px dashed red;
+}
+.text.selected {
+  border: 1px dashed teal;
+}
+
+/* Resize Handles */
+.resize-handle {
+  width: 10px;
+  height: 10px;
+  background: teal;
+  position: absolute;
+  cursor: se-resize;
+}
+.resize-handle.br {
+  bottom: -5px;
+  right: -5px;
+}
