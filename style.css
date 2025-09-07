@@ -48,4 +48,48 @@
 .resize-handle.br {
   bottom: -5px;
   right: -5px;
+
+}
+
+/* =======================
+   Mobile Responsive Adjustments
+======================= */
+@media (max-width: 768px) {
+  /* Toolbar positioning */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  /* Toolbar elements spacing */
+  .navbar .form-control,
+  .navbar .form-select,
+  .navbar .btn {
+    margin: 0.25rem 0;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  /* Page Select dropdown on mobile */
+  #pageSelect {
+    max-width: 90%;
+  }
+
+  /* Writing area adjustments */
+  #bgContainer {
+    height: calc(100vh - 60px); /* leave space for navbar */
+    overflow-y: auto;
+  }
+
+  /* Text sizing for mobile */
+  .note-text {
+    font-size: 18px !important;
+  }
+
+  /* Overlay images */
+  .overlayImg {
+    max-width: 80vw;
+    max-height: 40vh;
+  }
 }
