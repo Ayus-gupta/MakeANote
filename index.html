@@ -37,13 +37,31 @@
       <button class="btn btn-success" onclick="saveWork()">💾 Save</button>
       <button class="btn btn-info" onclick="loadWork()">📂 Load</button>
       <button class="btn btn-danger" onclick="deleteSelected()">🗑 Delete</button>
-      <select id="pageSelect" class="form-select">
-        <option value="lined-paper" selected>Lined</option>
-        <option value="grid-paper">Grid</option>
-        <option value="plain-paper">Plain</option>
-        <option value="yellow-paper">Yellow</option>
-      </select>
-    </div>
+<label for="pageSelect" class="block mb-2 font-semibold text-gray-700">
+  Choose Paper Style:
+</label>
+<select id="pageSelect" class="form-select w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200">
+  <optgroup label="Classic Styles">
+    <option value="lined-paper" selected>Lined</option>
+    <option value="grid-paper">Grid</option>
+    <option value="plain-paper">Plain</option>
+    <option value="yellow-paper">Yellow</option>
+    <option value="notebook-paper">Notebook (Margin Line)</option>
+    <option value="ruled-notebook">Ruled + Header</option>
+    <option value="parchment-paper">Parchment</option>
+    <option value="vintage-paper">Vintage</option>
+    <option value="composition-paper">Composition</option>
+  </optgroup>
+  
+  <optgroup label="Advanced Styles">
+    <option value="dotted-paper">Dotted</option>
+    <option value="blueprint-paper">Blueprint</option>
+    <option value="dark-paper">Dark Mode</option>
+    <option value="engineering-paper">Engineering Grid</option>
+  </optgroup>
+</select>
+
+
   </nav>
 
   <!-- Writing Area -->
@@ -51,5 +69,7 @@
 
   <!-- JS -->
   <script src="notes.js"></script>
+  <script src="draw.js"></script>
+
 </body>
 </html>
