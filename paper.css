@@ -46,3 +46,39 @@
     transparent 24px
   );
 }
+/* =========================
+   EXTRA NOTEBOOK STYLES
+   ========================= */
+
+/* Ruled Notebook with Header */
+.ruled-notebook {
+  background-color: #fff;
+  background-image:
+    /* Header block at the top */
+    linear-gradient(to bottom, #f9f9f9 0px, #f9f9f9 60px, transparent 60px),
+    /* Left margin line */
+    linear-gradient(to right, #ff6666 60px, transparent 60px),
+    /* Horizontal ruled lines */
+    repeating-linear-gradient(
+      to bottom,
+      #000 0px,
+      #000 1px,
+      transparent 1px,
+      transparent 24px
+    );
+  background-size: 100% 24px;
+  background-attachment: local;
+}
+
+/* Composition Book (black & white speckle cover style) */
+.composition-paper {
+  background-color: #fff;
+  background-image: 
+    radial-gradient(circle, black 1px, transparent 1px),
+    radial-gradient(circle, black 1px, transparent 1px),
+    radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 12px 12px, 18px 18px, 24px 24px;
+  background-blend-mode: multiply;
+  color: #000;
+  padding: 20px;
+}
